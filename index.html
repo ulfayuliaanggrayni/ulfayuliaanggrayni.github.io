@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!----===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <title>Web Ulfa Yulia A</title>
+</head>
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="profile.jpg" alt="">
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">Ulfa Yulia A</span>
+                    <span class="profession">Student</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                <li class="search-box">
+                    <i class='bx bx-search icon'></i>
+                    <input type="text" placeholder="Search...">
+                </li>
+
+                <ul class="menu-links">
+                    <li class="nav-link">
+                            <i class='bx bx-home-alt icon' ></i>
+                            <a href="BIODATA.html">Dashboard</a>
+                    </li>
+                    <li class="nav-link">
+                            <i class='bx bx-bar-chart-alt-2 icon' ></i>
+                            <a href="KATA PENGANTAR.html">Kata Pengantar</a>
+                    </li>
+
+                    <li class="nav-link">
+                            <i class='bx bx-bell icon'></i>
+                            <a href="PENDAHULUAN.html">Pendahuluan</a>
+                    </li>
+
+                    <li class="nav-link">
+                            <i class='bx bx-pie-chart-alt icon' ></i>
+                            <a href="BAB 1.html">Bab 1</a>
+                    </li>
+
+                    <li class="nav-link">
+                            <i class='bx bx-heart icon' ></i>
+                            <a href="BAB 2.html">Bab 2</a>
+                    </li>
+
+                    <li class="nav-link">
+                            <i class='bx bx-wallet icon' ></i>
+                            <a href="PENUTUP.html">Penutup</a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <li class="">
+                    <a href="#">
+                        <i class='bx bx-log-out icon' ></i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                </li>
+
+                <li class="mode">
+                    <div class="sun-moon">
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+                    <span class="mode-text text">Dark mode</span>
+
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+                
+            </div>
+        </div>
+
+    </nav>
+
+    <section class="home">
+        <div class="text">Selamat Datang di Laman ini</div>
+        <center>
+        <iframe width="350" height="250" src="https://www.youtube.com/embed/2XE_PU3fRNM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <iframe width="350" height="250" src="https://www.youtube.com/embed/13v6-RHeKbo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <iframe width="350" height="250" src="https://www.youtube.com/embed/DI5RgYj5Y0I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </center>
+
+        <center>
+            <iframe src="https://dokumen.tips/embed/v1/garis-dan-sudut-2ppt.html" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; margin-bottom:5px;max-width: 100%; overflow: hidden; width: 500px; height: 450px;" allowfullscreen></iframe>
+
+            <iframe src="https://dokumen.tips/embed/v1/garis-dan-sudut-5616b5dd0b655.html" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; margin-bottom:5px;max-width: 100%; overflow: hidden; width: 500px; height: 450px;" allowfullscreen></iframe>
+        </center>
+    </section>
+
+    <script>
+        const body = document.querySelector('body'),
+      sidebar = body.querySelector('nav'),
+      toggle = body.querySelector(".toggle"),
+      searchBtn = body.querySelector(".search-box"),
+      modeSwitch = body.querySelector(".toggle-switch"),
+      modeText = body.querySelector(".mode-text");
+
+
+toggle.addEventListener("click" , () =>{
+    sidebar.classList.toggle("close");
+})
+
+searchBtn.addEventListener("click" , () =>{
+    sidebar.classList.remove("close");
+})
+
+modeSwitch.addEventListener("click" , () =>{
+    body.classList.toggle("dark");
+    
+    if(body.classList.contains("dark")){
+        modeText.innerText = "Light mode";
+    }else{
+        modeText.innerText = "Dark mode";
+        
+    }
+});
+    </script>
+
+</body>
+</html>
